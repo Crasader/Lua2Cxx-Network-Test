@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <field type = "short" name = "messageType"/>
+    <field type = "java.obj" name = "myInfo" object = "true">
+        <field type = "java.obj" name = "kids" list = "true">
+            <field type = "string" name = "name"/>
+            <field type = "char" name = "age"/>
+        </field>
+    </field>
+    <field type = "java.obj" name = "wifes" list = "true">
+        <field type = "string" name = "name"/>
+    </field>
+</message>

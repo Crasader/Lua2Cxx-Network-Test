@@ -3,7 +3,7 @@ Lua2Cxx-Network-Test
 
 消息协议定义规则：
 通信协议使用xml文件对每个消息体进行定义，前后端依据每个消息对应的通信协议文件对消息体进行解析和序列化。
-通信协议文件以<message>作为根节点
+通信协议文件以<message>作为根节点。
 
 <?xml version="1.0" encoding="UTF-8"?>
 <message>

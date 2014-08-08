@@ -34,7 +34,7 @@ namespace net{
 
     const int PARSER_BUFFER_SIZE = 1024;
     //项目中不会直接这样使用一个文件路径，而是使用引擎自带的文件查找工具函数根据文件名称进行搜索而得到文件全路径
-    const std::string MESSAGE_PROTOCOL_PATH = "/Users/wanghuan/work/networkTest/res/messageProtocol/";
+    const std::string MESSAGE_PROTOCOL_PATH = "/Users/wanghuan/work/Lua2Cxx-Network-Test/res/messageProtocol/";
 
     /**
      *  protocol tree的结点

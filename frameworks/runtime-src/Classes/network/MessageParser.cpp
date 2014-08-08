@@ -259,7 +259,8 @@ namespace net{
                 for (int i = 1; i <= listLen; i++) {
                     lua_rawgeti(lua, -i, i);
                     //递归创建list中的各个元素，list中的元素以单链表的形式进行存储，最后返回链表的第一个结点
-                    DataNode *newChild = createDataTreeFromLua(lua,copySubTree(node,NULL));
+                    Node *subTreeRoot = copySubTree(node,NULL);
+                    DataNode *newChild = createDataTreeFromLua(lua,subTreeRoot);
                     if (listFirstChild == NULL) {
                         listFirstChild = newChild;
                         listLastChild = newChild;
@@ -331,7 +332,13 @@ namespace net{
         
         Node *node = new Node();
         node->leftLink = copySubTree(origNode->leftLink,node);
-        node->rightLink = copySubTree(origNode->rightLink,parentNode);
+        //复制protocol tree中的list节点子树的时候，在复制根节点的时候不要复制它的兄弟节点。
+        if (parentNode != NULL) {
+            node->rightLink = copySubTree(origNode->rightLink,parentNode);
+        }
+        else{
+            node->isObject = true;
+        }
         node->parent = parentNode;
         node->data = origNode->data;
         node->dataType = origNode->dataType;
@@ -564,7 +571,8 @@ namespace net{
             DataNode *listFirstChild = NULL;
             DataNode *listLastChild = listFirstChild;
             for (int i = 1; i <= listLen; i++) {
-                DataNode *newChild = createDataTreeFromBinary(copySubTree(node,NULL),parentNode);
+                Node *subTreeRoot = copySubTree(node,NULL);
+                DataNode *newChild = createDataTreeFromBinary(subTreeRoot,parentNode);
                 newChild->isObject = true;
                 if (listFirstChild == NULL) {
                     listFirstChild = newChild;

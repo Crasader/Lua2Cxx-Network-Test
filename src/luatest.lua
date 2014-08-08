@@ -378,18 +378,11 @@ local data10 = {
 
 local data11 = {
   ["messageType"] = g["MESSAGE_TYPE"]["TC_11"],
-  ["myInfo"] = {
-    ["kids"] = {
-      {["name"] = "kid1",["age"] = 1},
-      {["name"] = "kid2",["age"] = 2},
-      {["name"] = "kid3",["age"] = 3}
-    }
-  },
   ["wifes"] = {
     {["name"] = "w1"},
-    {["name"] = "w2"},
-    {["name"] = "w3"}
-  }
+    {["name"] = "w2"}
+  },
+  ["string_field"] = "wh"
 }
 
 local tcDataTable = {

@@ -26,7 +26,7 @@ Lua2Cxx-Network-Test
         <field type = "java.obj" name = "kids" list = "true">
             <field type = "string" name = "name"/>
             <field type = "char" name = "age"/>
-        </field>
+        </field> 
     </field>
 </message>
 

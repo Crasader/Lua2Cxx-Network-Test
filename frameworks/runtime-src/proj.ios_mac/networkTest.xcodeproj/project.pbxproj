@@ -11,7 +11,6 @@
 		11A8A84C1987ED3600FBF2DE /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A7CA1987ED3600FBF2DE /* AppDelegate.cpp */; };
 		11A8A8591987ED3600FBF2DE /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A7D61987ED3600FBF2DE /* error.c */; };
 		11A8A85A1987ED3600FBF2DE /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A7D61987ED3600FBF2DE /* error.c */; };
-		11A8A86D1987ED3600FBF2DE /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8A7E81987ED3600FBF2DE /* liblua.a */; };
 		11A8A86E1987ED3700FBF2DE /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8A7E81987ED3600FBF2DE /* liblua.a */; };
 		11A8A8B51987ED3700FBF2DE /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A81D1987ED3600FBF2DE /* tinystr.cpp */; };
 		11A8A8B61987ED3700FBF2DE /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A81D1987ED3600FBF2DE /* tinystr.cpp */; };
@@ -37,6 +36,7 @@
 		11A8A8F61987ED3700FBF2DE /* MessageWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8471987ED3600FBF2DE /* MessageWriter.cpp */; };
 		11A8A8F71987ED3700FBF2DE /* NetworkService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8491987ED3600FBF2DE /* NetworkService.cpp */; };
 		11A8A8F81987ED3700FBF2DE /* NetworkService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11A8A8491987ED3600FBF2DE /* NetworkService.cpp */; };
+		11B71774199786E200D0D4AD /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8A7E81987ED3600FBF2DE /* liblua.a */; };
 		15A8A4441834C43700142BE0 /* libchipmunk iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A8A4291834BDA200142BE0 /* libchipmunk iOS.a */; };
 		15A8A4451834C43700142BE0 /* libcocos2dx iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A8A4251834BDA200142BE0 /* libcocos2dx iOS.a */; };
 		15A8A4461834C43700142BE0 /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15A8A4271834BDA200142BE0 /* libcocos2dx-extensions iOS.a */; };
@@ -450,7 +450,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A8A86D1987ED3600FBF2DE /* liblua.a in Frameworks */,
+				11B71774199786E200D0D4AD /* liblua.a in Frameworks */,
 				C03781F618BF65B100FE4F13 /* libluabindings iOS.a in Frameworks */,
 				15A8A4441834C43700142BE0 /* libchipmunk iOS.a in Frameworks */,
 				15A8A4451834C43700142BE0 /* libcocos2dx iOS.a in Frameworks */,
@@ -1157,6 +1157,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/ui $(SRCROOT)/../../cocos2d-x/cocos/network $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external/lua/luajit/include $(SRCROOT)/../../cocos2d-x/external/lua/tolua $(SRCROOT)/../../cocos2d-x/cocos/scripting/lua-bindings/manual $(SRCROOT)/../../cocos2d-x/cocos/scripting/lua-bindings/auto";
@@ -1178,6 +1179,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../cocos2d-x $(SRCROOT)/../../cocos2d-x/cocos $(SRCROOT)/../../cocos2d-x/cocos/base $(SRCROOT)/../../cocos2d-x/cocos/physics $(SRCROOT)/../../cocos2d-x/cocos/math/kazmath $(SRCROOT)/../../cocos2d-x/cocos/2d $(SRCROOT)/../../cocos2d-x/cocos/ui $(SRCROOT)/../../cocos2d-x/cocos/network $(SRCROOT)/../../cocos2d-x/cocos/audio/include $(SRCROOT)/../../cocos2d-x/cocos/editor-support $(SRCROOT)/../../cocos2d-x/extensions $(SRCROOT)/../../cocos2d-x/external $(SRCROOT)/../../cocos2d-x/external/chipmunk/include/chipmunk $(SRCROOT)/../../cocos2d-x/external/lua/luajit/include $(SRCROOT)/../../cocos2d-x/external/lua/tolua $(SRCROOT)/../../cocos2d-x/cocos/scripting/lua-bindings/manual $(SRCROOT)/../../cocos2d-x/cocos/scripting/lua-bindings/auto";
@@ -1201,7 +1203,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/networkTest/frameworks/runtime-src/Classes/network/lib/lua";
+				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/Lua2Cxx-Network-Test/frameworks/runtime-src/Classes/network/lib/lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios";
@@ -1223,7 +1225,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/networkTest/frameworks/runtime-src/Classes/network/lib/lua";
+				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/Lua2Cxx-Network-Test/frameworks/runtime-src/Classes/network/lib/lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios";

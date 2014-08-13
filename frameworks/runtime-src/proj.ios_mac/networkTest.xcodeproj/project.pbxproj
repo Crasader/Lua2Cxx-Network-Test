@@ -1203,7 +1203,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/Lua2Cxx-Network-Test/frameworks/runtime-src/Classes/network/lib/lua";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../frameworks/runtime-src/Classes/network/lib/lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios";
@@ -1225,7 +1225,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "/Users/wanghuan/work/Lua2Cxx-Network-Test/frameworks/runtime-src/Classes/network/lib/lua";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../frameworks/runtime-src/Classes/network/lib/lua";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../cocos2d-x/cocos/platform/ios";
